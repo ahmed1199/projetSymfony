@@ -1,0 +1,5 @@
+{{ form_start(form) }}
+    {{ form_row(form.contenue, { 'label': 'Contenu' ,'attr': {'class': 'form-control form-row','rows':"5"}}) }}
+    {{ form_row(form.file, { 'label': 'File' , 'attr': {'class': 'form-row form-control'}  }) }}
+    <button class="btn btn-primary btn-khmayes">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

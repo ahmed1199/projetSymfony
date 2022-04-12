@@ -1,0 +1,35 @@
+.popup-content-khmayes{
+    position: fixed;
+    top: 15%;
+    left: 0;
+    right: 0;
+    width:50vw;
+    height: 50vh;
+    margin: auto;
+    z-index: 999;
+    background-color: #ede9e9; 
+    display: none; 
+    padding-inline: 10%; 
+    padding-top: 3%;
+    border-radius: 20px;
+}
+.black-background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    background-color: rgba(15, 15, 15,.4);
+    display: none;
+}
+.form-row{
+    width: 100%;
+}
+.btn-khmayes {
+    width: 20% ;
+    margin-top: 2%;
+    float: right;
+}

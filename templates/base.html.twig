@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>
+      Esprit-Connect
+    </title>
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16" />
+
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/popup.css" />
+    <title>
+      {% block title %}
+        Welcome!
+      {% endblock %}
+    </title>
+    {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+    {% block stylesheets %}
+      {# {{ encore_entry_link_tags('app') }} #}
+    {% endblock %}
+
+    {% block javascripts %}
+      {# {{ encore_entry_script_tags('app') }} #}
+    {% endblock %}
+  </head>
+  <body>
+    {% block body %}
+
+
+    {% endblock %}
+   
+    {# <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> #}
+    <script src="js/main.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/map-init.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
+    <script>
+        const popup = document.querySelector(".popup-content-khmayes");
+        const blackBackground = document.querySelector(".black-background");
+        const myInput = document.querySelector("#myInput");
+        myInput.addEventListener("focus", function() {
+            popup.style.display= "block";
+            blackBackground.style.display="block";
+        }, true);
+        blackBackground.addEventListener("click", function() {
+            popup.style.display= "none";
+            blackBackground.style.display="none";
+        }, true);
+        console.log("poupup",popup)
+        console.log("input",myInput)
+
+    </script>
+  </body>
+</html>
